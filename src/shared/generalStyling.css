@@ -1,0 +1,226 @@
+/* Home Page CSS */
+#page-body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: darkgray;
+	height: calc(90vh - 2px);
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
+	width: calc(100vw - 2px);
+}
+
+#welcome-container {
+	position: relative;
+	width: 75vw;
+	margin: 20px auto;
+}
+
+#welcome-title,
+#recent-posts {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+#welcome-container,
+#welcome-title,
+#recent-posts {
+	border-radius: 5px;
+}
+
+#buttonContainer {
+	display: flex;
+	position: relative;
+	width: 75vh;
+	justify-content: space-around;
+}
+
+.buttonItem {
+	font-size: larger;
+}
+
+.book-button {
+	position: relative;
+	display: flex;
+	margin: auto;
+	border-radius: 10px;
+	border: solid grey 1px;
+	background-color: lightgrey;
+	margin: 20px 0px;
+	padding: 10px 10px;
+}
+
+.book-button-link {
+	color: black;
+}
+
+#book-header {
+	font-weight: 700;
+	font-size: xx-large;
+}
+
+#logged-out-home-container,
+#logged-in-home-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+/* DaVinci Code Page CSS */
+#daVinciCode-page-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: darkgray;
+	height: calc(90vh - 2px);
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
+	width: calc(100vw - 2px);
+}
+
+/* Post Item CSS */
+.text-field {
+	display: block;
+	border: solid;
+	text-align: left;
+	margin: auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: large;
+	margin: 10px auto;
+	resize: none;
+	width: 95%;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+
+.input-field {
+	display: block;
+	border: solid;
+	margin: auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: x-large;
+	padding: 5px 10px;
+	width: 95%;
+	box-sizing: border-box;
+}
+
+#updateButtonContainer,
+#addButtonContainer {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	width: 100%;
+}
+
+h2 {
+	width: 95%;
+	padding: 0px 5px;
+}
+
+#postContainer {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	border: solid;
+	border-radius: 10px;
+	background-color: rgb(138, 128, 118, 0.9);
+	margin: 10px auto;
+	max-width: 900px;
+	width: 100%;
+}
+
+#title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#signature {
+	font-style: italic;
+}
+
+#userPhoto {
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	margin: auto;
+}
+
+#photoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#deleteContainer {
+	display: flex;
+	align-items: center;
+}
+
+#deleteSection,
+#updateSection {
+	background-color: rgba(256, 256, 256, 0.9);
+	border-radius: 5px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#buttonContainer2 {
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 75vw;
+	max-width: 800px;
+}
+
+.addUpdateDeleteButtons {
+	font-size: larger;
+}
+
+/* Log In Page CSS */
+.loginInputField {
+	display: block;
+	border: solid;
+	text-align: center;
+	margin: auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: x-large;
+	margin: 10px auto;
+}
+
+#loginModal {
+	width: 370px;
+}
+
+#loginModalCloseButton {
+	position: relative;
+	display: flex;
+	margin: auto;
+}
+
+#deleteModalButtons {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+}
+
+/* Sign Up Page CSS */
+.signupInputField {
+	display: block;
+	border: solid;
+	text-align: center;
+	margin: auto;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: x-large;
+	margin: 10px auto;
+}

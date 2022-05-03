@@ -1,0 +1,42 @@
+#page-body {
+	position: relative;
+	display: flex;
+	height: calc(90vh - 2px);
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
+	width: calc(100vw - 2px);
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;
+	height: 50%;
+	border: solid;
+	border-radius: 10px;
+	background-color: rgb(138, 128, 118, 0.9);
+	position: relative;
+}
+
+.test-field,
+.welcome-field {
+	text-align: center;
+}
+
+#home-link {
+	display: absolute;
+	border: solid;
+	border-radius: 10px;
+	background-color: rgb(138, 128, 118, 0.9);
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+
+#signupModal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

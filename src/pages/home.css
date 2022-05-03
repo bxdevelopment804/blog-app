@@ -1,0 +1,79 @@
+#page-body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* background-image: url('../backgrounds/Raven\ Background\ \(Modified\).jpg'); */
+	/* background-image: url('https://blog.sevenponds.com/wp-content/uploads/2016/06/raven-513x289.jpg'); */
+	background-color: darkgray;
+	height: calc(90vh - 2px);
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
+	width: calc(100vw - 2px);
+}
+
+#welcome-container {
+	position: relative;
+	width: 75vw;
+	margin: 20px auto;
+}
+
+#welcome-title,
+#recent-posts {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+#welcome-container,
+#welcome-title,
+#recent-posts {
+	border-radius: 5px;
+}
+
+#buttonContainer {
+	display: flex;
+	position: relative;
+	width: 75vh;
+	justify-content: space-around;
+}
+
+.buttonItem {
+	font-size: larger;
+}
+
+#buttonContainer {
+	display: flex;
+	margin: auto;
+}
+
+.book-button {
+	position: relative;
+	display: flex;
+	margin: auto;
+	border-radius: 10px;
+	border: solid grey 1px;
+	background-color: lightgrey;
+	margin: 20px 0px;
+	padding: 10px 10px;
+}
+
+.book-button-link {
+	color: black;
+}
+
+#book-header {
+	font-weight: 700;
+	font-size: xx-large;
+}
+
+#logged-out-home-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}

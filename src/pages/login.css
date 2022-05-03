@@ -1,0 +1,24 @@
+#page-body {
+	position: relative;
+	display: flex;
+	height: calc(90vh - 2px);
+	border: solid;
+	border-width: 1px;
+	border-color: transparent;
+	width: calc(100vw - 2px);
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	max-width: 500px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: x-large;
+	margin-top: 20px;
+}
+
+.test-field,
+.welcome-field {
+	text-align: center;
+}
