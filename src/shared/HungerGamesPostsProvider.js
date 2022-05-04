@@ -31,7 +31,7 @@ const HungerGamesPostsProvider = (props) => {
 			userPhoto:
 				'https://images.pexels.com/photos/6976423/pexels-photo-6976423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 			title: 'True Intent',
-			text: "They weren't specifically meant for anything.  <br/>  Gale derives the bomb idea from a trap he used for hunting. He proposed that idea to Beetee. Katniss walks in on them both working on the bomb and Gale and her have a heated conversation about the implications. Katniss thinks it is a weapon that shouldn't be used in this war, Gale disagrees. It is evident he imagines the bomb to be used against the opposition; Katniss remains angered about that (mainly for the second bomb going off). Off the pages the bomb is handed to Coin - this shouldn't be a surprise nor a bad thing for Gale though. <br/>  We don't hear about the bomb again until it is used in the Capitol.",
+			text: "They weren't specifically meant for anything. Gale derives the bomb idea from a trap he used for hunting. He proposed that idea to Beetee. Katniss walks in on them both working on the bomb and Gale and her have a heated conversation about the implications. Katniss thinks it is a weapon that shouldn't be used in this war, Gale disagrees.",
 			timeStamp: 'Thu Jan 06 2022',
 		},
 	]);

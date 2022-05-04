@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 import { registeredUserListContext } from '../RegisteredUserListProvider';
 import Modal from 'react-modal';
-import './signup.css';
+import '../shared/generalStyling.css';
 
 const Signup = () => {
 	const [userRegistered, setUserRegistered] = useContext(

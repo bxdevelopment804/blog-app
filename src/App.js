@@ -1,7 +1,4 @@
 import React from 'react';
-
-import './App.css';
-
 import Navbar from './shared/navbar';
 import Main from './pages/main';
 
@@ -16,7 +13,6 @@ import ValidationProvider from './ValidationProvider';
 import DaVinciPostsProvider from './shared/DaVinciPostsProvider';
 import HarryPotterPostsProvider from './shared/HarryPotterPostsProvider';
 import HungerGamesPostsProvider from './shared/HungerGamesPostsProvider';
-
 import CurrentUserInfoProvider from './CurrentUserInfoProvider';
 import RegisteredUserListProvider from './RegisteredUserListProvider';
 

@@ -4,7 +4,8 @@ import { userRegistrationContext } from '../UserRegistrationProvider';
 import { userNameContext } from '../UserNameProvider';
 import { currentUserInfoContext } from '../CurrentUserInfoProvider';
 
-import './navbar.css';
+// import './navbar.css';
+import '../shared/generalStyling.css';
 
 const Navbar = () => {
 	const importedContext = useContext(userRegistrationContext);
@@ -72,39 +73,33 @@ const Navbar = () => {
 		);
 	} else {
 		return (
-			<div>
-				<div id='page-container'>
-					<nav id='navbar'>
-						<Link to='/' id='home-button' class='button'>
-							Home
+			<div id='page-container'>
+				<nav id='navbar'>
+					<Link to='/' id='home-button' class='button'>
+						Home
+					</Link>
+					<span id='button-span'>
+						<Link to='/login' class='button'>
+							Log In
 						</Link>
-						<span id='button-span'>
-							<Link to='/login' class='button'>
-								Log In
-							</Link>
-							<Link
-								to='/signup'
-								id='navbar-signup-button-anchor'
-								class='button'
-							>
-								Sign Up
-							</Link>
-						</span>
-					</nav>
+						<Link to='/signup' id='navbar-signup-button-anchor' class='button'>
+							Sign Up
+						</Link>
+					</span>
+				</nav>
 
-					<div id='header-banner'>Raven's Blog</div>
-					<div id='header-attachment'>
-						<div id='raven-image-container'>
-							<img
-								id='raven-photo'
-								src='https://blog.sevenponds.com/wp-content/uploads/2016/06/raven-513x289.jpg'
-								alt='raven photo'
-							/>
-						</div>
-						<div id='header-attachment-text'>
-							Welcome to Raven's Blog! <br /> Join the discussion on your
-							favorite books!
-						</div>
+				<div id='header-banner'>Raven's Blog</div>
+				<div id='header-attachment'>
+					<div id='raven-image-container'>
+						<img
+							id='raven-photo'
+							src='https://blog.sevenponds.com/wp-content/uploads/2016/06/raven-513x289.jpg'
+							alt='raven photo'
+						/>
+					</div>
+					<div id='header-attachment-text'>
+						Welcome to Raven's Blog! <br /> Join the discussion on your favorite
+						books!
 					</div>
 				</div>
 			</div>

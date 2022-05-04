@@ -4,7 +4,7 @@ import { userNameContext } from '../UserNameProvider';
 import { userUUIDContext } from '../UserUUIDProvider';
 import { userPhotoContext } from '../UserPhotoProvider';
 import { userRegistrationContext } from '../UserRegistrationProvider';
-import './post-item.css';
+import './generalStyling.css';
 
 function PostItem(props) {
 	const loggedIn = useContext(userRegistrationContext);
