@@ -17,4 +17,4 @@
 
 4.  **Link**
 
-    - [Blog App](https://blog-app-hazel.vercel.app/)
+    - [Blog App](https://bxd-blog.vercel.app/)
