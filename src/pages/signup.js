@@ -45,6 +45,9 @@ const Signup = () => {
 		newUser.password = password;
 		newUser.photo = photo;
 		newUser.uuid = uuidv4();
+		newUser.loggedIn = true;
+
+		window.localStorage.setItem('lsCompiledUserInfo', JSON.stringify(newUser));
 	};
 
 	const customStyles = {
@@ -112,34 +115,58 @@ const Signup = () => {
 	return (
 		<div id='page-body'>
 			<form id='content' onSubmit={createUser}>
-				<p class='welcome-field'>
+				<p className='welcome-field'>
 					Please enter your information below to register!
 				</p>
+				<label className='signupLabel' htmlFor='signupNameInput'>
+					Name
+				</label>
 				<input
-					class='signupInputField'
+					id='signupNameInput'
+					className='signupInputField'
 					type='text'
-					placeholder='name'
+					// placeholder='name'
 					onInput={(event) => setName(event.target.value)}
 				/>
+				<label className='signupLabel' htmlFor='signupEmailInput'>
+					Email
+				</label>
 				<input
-					class='signupInputField'
+					id='signupEmailInput'
+					className='signupInputField'
 					type='text'
-					placeholder='email'
+					// placeholder='email'
 					onInput={(event) => setEmail(event.target.value)}
 				/>
+				<label className='signupLabel' htmlFor='signupPasswordInput'>
+					Password
+				</label>
 				<input
-					class='signupInputField'
+					id='signupPasswordInput'
+					className='signupInputField'
 					type='password'
-					placeholder='password'
+					// placeholder='password'
 					onInput={(event) => setPassword(event.target.value)}
 				/>
+
+				<label className='signupLabel' htmlFor='userPhotoUpload'>
+					Upload Photo
+				</label>
 				<input
-					class='signupInputField'
-					type='text'
-					placeholder='photoURL'
-					onInput={(event) => setPhoto(event.target.value)}
+					id='userPhotoUpload'
+					className='signupUploadPhotoField'
+					type='file'
+					accept='.png, .jpg, .jpeg'
+					onChange={(event) =>
+						setPhoto(URL.createObjectURL(event.target.files[0]))
+					}
 				/>
-				<button class='signupInputField' type='submit' onClick={validateEmail}>
+
+				<button
+					className='signupInputField'
+					type='submit'
+					onClick={validateEmail}
+				>
 					Register
 				</button>
 				<Modal

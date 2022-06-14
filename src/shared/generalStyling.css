@@ -247,6 +247,12 @@ a {
 	text-align: center;
 }
 
+.loginLabel {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
 .loginInputField {
 	display: block;
 	border: solid;
@@ -279,10 +285,34 @@ a {
 	display: block;
 	border: solid;
 	text-align: center;
-	margin: auto;
+	/* margin: auto; */
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: x-large;
 	margin: 10px auto;
+}
+
+.signupLabel {
+	/* border: solid red; */
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.signupUploadPhotoField {
+	/* display: block; */
+	display: flex;
+	/* flex-direction: column; */
+	align-items: center;
+	justify-content: space-between;
+	/* border: solid; */
+	/* border: solid red; */
+	/* text-align: center; */
+	/* margin: auto; */
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: x-large;
+	margin: 10px auto;
+	max-width: 285px;
+	/* overflow-x: visible; */
 }
 
 #page-body {

@@ -41,14 +41,14 @@ const Navbar = () => {
 			<div>
 				<div id='page-container'>
 					<nav id='navbar'>
-						<Link to='/' id='home-button' class='button'>
+						<Link to='/' id='home-button' className='button'>
 							Home
 						</Link>
 						<span id='button-span'>
-							<div id='unusedButton' class='button'>
+							<div id='unusedButton' className='button'>
 								Unused
 							</div>
-							<Link to='/' class='button' onClick={logout}>
+							<Link to='/' className='button' onClick={logout}>
 								Sign Out
 							</Link>
 						</span>
@@ -75,14 +75,18 @@ const Navbar = () => {
 		return (
 			<div id='page-container'>
 				<nav id='navbar'>
-					<Link to='/' id='home-button' class='button'>
+					<Link to='/' id='home-button' className='button'>
 						Home
 					</Link>
 					<span id='button-span'>
-						<Link to='/login' class='button'>
+						<Link to='/login' className='button'>
 							Log In
 						</Link>
-						<Link to='/signup' id='navbar-signup-button-anchor' class='button'>
+						<Link
+							to='/signup'
+							id='navbar-signup-button-anchor'
+							className='button'
+						>
 							Sign Up
 						</Link>
 					</span>

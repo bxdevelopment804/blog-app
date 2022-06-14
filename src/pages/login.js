@@ -115,22 +115,30 @@ const Login = () => {
 		<React.Fragment>
 			<body id='page-body'>
 				<form id='content' onSubmit={createUser}>
-					<p class='welcome-field'>
+					<p className='welcome-field'>
 						Please enter your information below to log in!
 					</p>
+					<label className='loginLabel' htmlFor='loginEmailInput'>
+						Email
+					</label>
 					<input
-						class='loginInputField'
+						id='loginEmailInput'
+						className='loginInputField'
 						type='text'
-						placeholder='email'
+						// placeholder='email'
 						onInput={(event) => setEmail(event.target.value)}
 					/>
+					<label className='loginLabel' htmlFor='loginPasswordInput'>
+						Password
+					</label>
 					<input
-						class='loginInputField'
+						id='loginPasswordInput'
+						className='loginInputField'
 						type='password'
-						placeholder='password'
+						// placeholder='password'
 						onInput={(event) => setPassword(event.target.value)}
 					/>
-					<button class='loginInputField' type='button' onClick={validate}>
+					<button className='loginInputField' type='button' onClick={validate}>
 						Log In
 					</button>
 					<Modal

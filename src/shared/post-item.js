@@ -233,14 +233,14 @@ function PostItem(props) {
 					>
 						<h2 ref={(_subtitle) => (subtitle = _subtitle)}>Update Post:</h2>
 						<input
-							class='input-field'
+							className='input-field'
 							type='text'
 							placeholder='Title'
 							onInput={(event) => setAddedPostTitle(event.target.value)}
 						/>
 						<textarea
 							id='updateTextField'
-							class='text-field'
+							className='text-field'
 							type='text'
 							placeholder='Text'
 							onInput={(event) => setAddedPostText(event.target.value)}
@@ -271,13 +271,13 @@ function PostItem(props) {
 					>
 						<h2 ref={(_subtitle) => (subtitle = _subtitle)}>Add Post:</h2>
 						<input
-							class='input-field'
+							className='input-field'
 							type='text'
 							placeholder='Title'
 							onInput={(event) => setAddedPostTitle(event.target.value)}
 						/>
 						<textarea
-							class='text-field'
+							className='text-field'
 							type='text'
 							placeholder='Post'
 							onInput={(event) => setAddedPostText(event.target.value)}
